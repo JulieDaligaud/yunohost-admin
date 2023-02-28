@@ -395,6 +395,19 @@ const routes = [
       args: { trad: 'backup_create' },
       breadcrumb: ['backup', 'backup-list', 'backup-create']
     }
+  },
+
+  /* ────────────╮
+   │  SYSTEM_INFO  │
+   ╰──────────── */
+  {
+    name: 'system_information',
+    path: '/system_information',
+    component: () => import(/* webpackChunkName: "views/system_information" */ '@/views/system_information/SystemInformation'),
+    meta: {
+      args: { trad: 'system_information' },
+      breadcrumb: ['system_information']
+    }
   }
 ]
 
